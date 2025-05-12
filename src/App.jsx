@@ -16,7 +16,7 @@ import {
   TrendingUp,
   Link,
 } from "lucide-react";
-import logo from "./assets/logo/logo.jpg"
+import logo from "../src/assets/logo/logo.jpg"
 
 // Create Router
 const routes = {
