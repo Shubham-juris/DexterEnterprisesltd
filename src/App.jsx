@@ -69,13 +69,13 @@ function Navbar({ navigate, currentRoute, mobileMenuOpen, setMobileMenuOpen }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Link to="/" className="block w-32">
+            <button onClick={() => navigate("home")} className="block w-32">
               <img
                 src={logo}
                 alt="Dexter Enterprises Logo"
                 className="w-full h-auto"
               />
-            </Link>
+            </button>
           </div>
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -360,8 +360,6 @@ function Features() {
     </section>
   );
 }
-
-
 
 // CTA Section Component
 function CTASection() {
