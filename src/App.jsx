@@ -194,7 +194,6 @@ function HomePage() {
       <Hero />
       <Services />
       <Features />
-      <Testimonials />
       <CTASection />
     </div>
   );
@@ -362,68 +361,7 @@ function Features() {
   );
 }
 
-// Testimonials Section Component
-function Testimonials() {
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      role: "CEO, TechStart",
-      content:
-        "Working with Dexter Enterprises transformed our online presence completely. Our website traffic increased by 200% in just three months!",
-    },
-    {
-      name: "Michael Chen",
-      role: "Marketing Director, GrowFast",
-      content:
-        "The SEO support we received was exceptional. The team is professional, knowledgeable, and truly cares about our success.",
-    },
-    {
-      name: "Emma Rodriguez",
-      role: "Founder, Innovation Co.",
-      content:
-        "Their business strategy consultation gave us the roadmap we needed to scale our operations efficiently. Highly recommended!",
-    },
-  ];
 
-  return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            What Our Clients Say
-          </h2>
-          <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it — see what our clients have to say
-            about our services.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-md">
-              <div className="mb-4">
-                <div className="flex text-yellow-400">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="mr-1">
-                      ★
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <p className="text-gray-700 mb-6">"{testimonial.content}"</p>
-              <div>
-                <p className="font-semibold text-gray-900">
-                  {testimonial.name}
-                </p>
-                <p className="text-gray-600 text-sm">{testimonial.role}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 // CTA Section Component
 function CTASection() {
