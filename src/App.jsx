@@ -16,7 +16,8 @@ import {
   TrendingUp,
   Link,
 } from "lucide-react";
-import logo from "../src/assets/logo/logo.jpg"
+import logo from "../src/assets/logo/logo.jpg";
+import home from "./assets/home/home.webp";
 
 // Create Router
 const routes = {
@@ -202,8 +203,13 @@ function HomePage() {
 // Hero Section Component
 function Hero() {
   return (
-    <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 pt-32 pb-20 md:pt-40 md:pb-28">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      className="relative bg-cover bg-center pt-32 pb-20 md:pt-40 md:pb-28"
+      style={{ backgroundImage: `url(${home})` }}
+    >
+      <div className="bg-black/50 absolute inset-0 z-0" />{" "}
+      {/* Optional dark overlay */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center md:text-left md:w-2/3">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
             Empowering Your Business Growth
@@ -811,6 +817,18 @@ function ContactPage() {
               </button>
             </div>
           </div>
+        </div>
+        <div className="w-full h-[450px] mt-10">
+          <iframe
+            title="Company Location"
+            src="https://www.google.com/maps?q=7-3850+19TH+ST+NE,+Calgary,+AB,+Canada&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>
