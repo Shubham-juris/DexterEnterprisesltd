@@ -278,11 +278,11 @@ function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex  flex-wrap justify-center gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all"
+              className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all w-full md:w-[45%] lg:w-[22%]"
             >
               <div className="text-blue-600 mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
@@ -521,29 +521,6 @@ function ServicesPage() {
 
 // About Page Component
 function AboutPage() {
-  const team = [
-    {
-      name: "John Dexter",
-      role: "Founder & CEO",
-      bio: "With over 15 years of experience in digital marketing and business strategy, John founded Dexter Enterprises to help businesses achieve their full potential.",
-    },
-    {
-      name: "Emily Chen",
-      role: "SEO Specialist",
-      bio: "Emily brings 8 years of SEO expertise, having previously worked with Fortune 500 companies to optimize their online presence and search rankings.",
-    },
-    {
-      name: "Michael Rodriguez",
-      role: "Web Development Lead",
-      bio: "Michael leads our web development team with 10+ years of experience in creating custom, high-performing websites for businesses of all sizes.",
-    },
-    {
-      name: "Sarah Johnson",
-      role: "Business Strategy Consultant",
-      bio: "Sarah's background in business consulting helps our clients develop strategic plans that drive sustainable growth and success.",
-    },
-  ];
-
   return (
     <div className="pt-24 pb-16">
       <div className="bg-gray-50 py-16">
@@ -628,26 +605,6 @@ function AboutPage() {
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="mt-20">
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            Meet Our Team
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6 shadow-sm">
-                <div className="w-24 h-24 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users size={36} className="text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold text-center mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-blue-600 text-center mb-4">{member.role}</p>
-                <p className="text-gray-600 text-center">{member.bio}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>
@@ -771,9 +728,9 @@ function ContactPage() {
                   <div className="ml-4">
                     <h3 className="font-medium">Address</h3>
                     <p className="text-gray-600">
-                      123 Business Avenue, Suite 200
+                      7-3850 19TH ST NE Calgary, AB
                     </p>
-                    <p className="text-gray-600">New York, NY 10001</p>
+                    <p className="text-gray-600">Canada,Alberta</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -782,7 +739,7 @@ function ContactPage() {
                   </div>
                   <div className="ml-4">
                     <h3 className="font-medium">Phone</h3>
-                    <p className="text-gray-600">(555) 123-4567</p>
+                    <p className="text-gray-600">+1 587-839-4791</p>
                   </div>
                 </div>
               </div>
@@ -855,7 +812,7 @@ function Footer({ navigate }) {
                 href="https://www.instagram.com/dexter_enterprises"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-red*0-400 hover:text-red-500 transition-colors"
+                className="text-red-500 hover:text-red-400 transition-colors"
               >
                 <span className="sr-only">Instagram</span>
                 <svg
@@ -874,7 +831,7 @@ function Footer({ navigate }) {
                 href="https://dexterenterprises.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-blue-400 hover:text-white transition-colors"
               >
                 <span className="sr-only">Website</span>
                 <svg
