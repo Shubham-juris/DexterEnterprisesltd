@@ -301,7 +301,7 @@ function Services() {
 // Features Section Component
 function Features() {
   const features = [
-    {
+    { 
       title: "Expert Team",
       description:
         "Our team of experienced professionals is dedicated to delivering exceptional results for your business.",
