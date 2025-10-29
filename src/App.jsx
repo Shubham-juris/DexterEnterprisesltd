@@ -301,7 +301,7 @@ function Services() {
 // Features Section Component
 function Features() {
   const features = [
-    { 
+    {
       title: "Expert Team",
       description:
         "Our team of experienced professionals is dedicated to delivering exceptional results for your business.",
@@ -728,7 +728,7 @@ function ContactPage() {
                   <div className="ml-4">
                     <h3 className="font-medium">Address</h3>
                     <p className="text-gray-600">
-                      7-3850 19TH ST NE Calgary, AB
+                      #209-215,main st NW , Slave lake ,AB TOG 2A1
                     </p>
                     <p className="text-gray-600">Canada,Alberta</p>
                   </div>
@@ -778,7 +778,7 @@ function ContactPage() {
         <div className="w-full h-[450px] mt-10">
           <iframe
             title="Company Location"
-            src="https://www.google.com/maps?q=7-3850+19TH+ST+NE,+Calgary,+AB,+Canada&output=embed"
+            src="https://www.google.com/maps?q=%23209-215+Main+St+NW,+Slave+Lake,+AB+T0G+2A1,+Canada&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -926,7 +926,7 @@ function Footer({ navigate }) {
               <li className="flex items-start">
                 <Home size={20} className="text-blue-400 flex-shrink-0 mt-1" />
                 <span className="ml-3 text-gray-400">
-                  7-3850 19TH ST NE Calgary, AB
+                  #209-215,main st NW , Slave lake ,AB TOG 2A1
                   <br />
                   Canada,Alberta
                 </span>
