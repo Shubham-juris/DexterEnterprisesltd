@@ -730,7 +730,6 @@ function ContactPage() {
                     <p className="text-gray-600">
                       #209-215,main st NW , Slave lake ,AB TOG 2A1
                     </p>
-                    <p className="text-gray-600">Canada,Alberta</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -927,8 +926,8 @@ function Footer({ navigate }) {
                 <Home size={20} className="text-blue-400 flex-shrink-0 mt-1" />
                 <span className="ml-3 text-gray-400">
                   #209-215,main st NW , Slave lake ,AB TOG 2A1
-                  <br />
-                  Canada,Alberta
+                  
+                 
                 </span>
               </li>
               <li className="flex items-start">
