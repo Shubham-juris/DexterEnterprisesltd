@@ -762,16 +762,16 @@ function ContactPage() {
               </div>
             </div>
 
-            <div className="mt-8 bg-blue-600 text-white p-8 rounded-lg">
-              <h3 className="text-xl font-bold mb-4">Ready to Get Started?</h3>
-              <p className="mb-4">
-                Schedule a free consultation with our team to discuss your
-                business needs.
-              </p>
-              <button className="bg-white text-blue-600 hover:bg-blue-50 font-medium px-6 py-3 rounded-md transition-all">
-                Book a Consultation
-              </button>
-            </div>
+              {/* <div className="mt-8 bg-blue-600 text-white p-8 rounded-lg">
+                <h3 className="text-xl font-bold mb-4">Ready to Get Started?</h3>
+                <p className="mb-4">
+                  Schedule a free consultation with our team to discuss your
+                  business needs.
+                </p>
+                <button className="bg-white text-blue-600 hover:bg-blue-50 font-medium px-6 py-3 rounded-md transition-all">
+                  Book a Consultation
+                </button>
+              </div> */}
           </div>
         </div>
         <div className="w-full h-[450px] mt-10">
